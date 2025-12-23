@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('email');
             $table->string('username');
             $table->string('password');
-            $table->string('added_by');
-            $table->string('updated_by');
+            $table->string('added_by')->nullable();
+            $table->string('updated_by')->nullable();
             $table->string('com_code');
             $table->timestamps();
         });
